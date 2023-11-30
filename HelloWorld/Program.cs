@@ -8,7 +8,12 @@ namespace Application
 {
     public class Person
     {
-        private  string? firstName;
+        public Person() {
+            Console.WriteLine("Constructor");
+        }
+
+        private string firstName;
+
         private string? lastName;
         private int age;
         private bool isValidName( string? name)
